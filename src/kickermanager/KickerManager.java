@@ -7,7 +7,7 @@ package kickermanager;
 
 /**
  *
- * @author Jelle
+ * @author Jelle & Evert
  */
 public class KickerManager {
 
