@@ -5,7 +5,9 @@
  */
 package kickermanager;
 
+import java.io.Console;
 import java.sql.*;
+import java.util.Scanner;
 
 /**
  *
@@ -18,20 +20,34 @@ public class KickerManager {
      */
     public static void main(String[] args) {       // TODO code application logic here
         try {
+            Scanner in = new Scanner(System.in);
+            String input = "start";
 
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/kickergamedb", "root", "");
-            Statement stmt = con.createStatement();
-            String query = "select * from test";
-            ResultSet rs = stmt.executeQuery(query);
-            while (rs.next()) {
-                String name = rs.getString("voornaam");
-                System.out.println(name);
+            while (!input.equalsIgnoreCase("stop")) {
+                if (in != null) {
+                    System.out.print("Selecteer (speler toevoegen/spelers bekijken/speler zoeken/stop): ");
+                    input = in.nextLine();
+                    switch (input) {
+                        case "speler toevoegen":
+                            SpelerToevoegen.main(null);
+                            break;
+                        case "spelers bekijken":
+                            SpelersBekijken.main(null);
+                            break;
+                        case "speler zoeken":
+                            SpelerZoeken.main(null);
+                            break;
+
+                    }
+                } else {
+                    input = "stop";
+                }
+
             }
-        } catch (SQLException ex) {
-            System.out.println("SQLException: " + ex.getMessage());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+
+        } catch (Exception ex) {
+            System.out.println("Exception: " + ex.getMessage());
+
         }
     }
 }

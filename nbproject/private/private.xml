@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/Match.java</file>
-            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/Team.java</file>
-            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/Wedstrijd.java</file>
+            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/SpelersBekijken.java</file>
+            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/SpelerToevoegen.java</file>
+            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/Databank.java</file>
+            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/SpelerZoeken.java</file>
             <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/KickerManager.java</file>
-            <file>file:/C:/Users/Jelle/Documents/KickerManager/KickerManager/src/kickermanager/Speler.java</file>
         </group>
     </open-files>
 </project-private>
